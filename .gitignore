@@ -1,0 +1,18 @@
+# MATLAB / Octave
+*.asv
+*.m~
+octave-workspace
+*.mat
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python (caso use control/scipy)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# SO
+.DS_Store
+Thumbs.db
