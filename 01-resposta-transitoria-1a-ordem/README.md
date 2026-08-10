@@ -1,4 +1,4 @@
-# 01 — Resposta transitória e de regime estacionário: sistemas de 1ª ordem
+# Resposta transitória e de regime estacionário: sistemas de 1ª ordem
 
 Análise de resposta transitória e de regime estacionário de sistemas de 1ª ordem a partir de suas funções de transferência.
 
