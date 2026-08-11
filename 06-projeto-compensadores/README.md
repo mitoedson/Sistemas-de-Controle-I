@@ -51,7 +51,7 @@ O projeto de compensadores visa alterar a dinâmica da planta original para que 
 #### A. Compensação por Avanço de Fase (Phase-Lead)
 Esta técnica é utilizada principalmente para melhorar a **resposta transitória** (tornar o sistema mais rápido) e aumentar a **estabilidade relativa**.
 *   **Função de Transferência:** $G_c(s) = K_c \alpha \frac{Ts+1}{\alpha Ts + 1} = K_c \frac{s + 1/T}{s + 1/(\alpha T)}$, com $0 < \alpha < 1$.
-*   **Configuração Polo-Zero:** O zero ($-1/T$) é posicionado à direita do polo ($-1/\alpha T$) no plano complexo.
+*   **Configuração Polo-Zero:** O zero ($-\frac{1}{T}$) é posicionado à direita do polo ($-\frac{1}{\alpha T}$) no plano complexo.
 *   **Efeito no LGR:** A adição do par polo-zero de avanço gera uma contribuição angular positiva, o que "puxa" os ramos do LGR para a **esquerda** do plano $s$.
 *   **Impacto Prático:** Reduz o tempo de subida ($t_r$) e o tempo de acomodação ($t_s$), agindo de forma análoga à ação derivativa (PD).
 
