@@ -7,14 +7,16 @@ Material de referência sobre a Transformada de Laplace, com foco no seu uso com
 A Transformada de Laplace de uma função $f(t)$, definida para $t \geq 0$, é dada por:
 
 ```math
-F(s) = \mathcal{L}\{f(t)\} = \int_0^{\infty} f(t)e^{-st} dt
+\mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t)e^{-st} dt
 ```
 
 onde $s = \sigma + j\omega$ é uma variável complexa. O operador converte uma função do domínio do tempo (variável real $t$) em uma função no domínio da frequência complexa (variável $s$).
 
 A transformada inversa, que retorna do domínio $s$ para o domínio do tempo, é indicada por:
 
-$$f(t) = \mathcal{L}^{-1}\{F(s)\}$$
+```math
+f(t) = \mathcal{L}^{-1}\{F(s)\}
+```
 
 **Condição de existência:** a integral converge quando $f(t)$ é contínua por partes em qualquer intervalo finito e é de *ordem exponencial* — ou seja, existe $\sigma_c$ tal que $e^{-\sigma t}|f(t)| \to 0$ quando $t \to \infty$, para $\sigma > \sigma_c$. Praticamente todos os sinais de interesse em engenharia de controle (degraus, exponenciais, senoides, polinômios) satisfazem essa condição.
 

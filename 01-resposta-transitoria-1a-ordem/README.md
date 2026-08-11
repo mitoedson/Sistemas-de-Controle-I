@@ -24,15 +24,22 @@ $$\frac{dx}{x} = \alpha dt \Longrightarrow \int \frac{dx}{x} = \int \alpha dt \L
 
 Aplicando exponencial e usando $x(0) = x_0$ para determinar a constante $C$:
 
-$$x(t) = e^{C}e^{\alpha t} \qquad x(0) = e^{C} = x_0 \Longrightarrow x(t) = x_0 e^{\alpha t}$$
+$$x(t) = e^{C}e^{\alpha t} \qquad x(0) = e^{C} = x_0 \Longrightarrow x(t) = x_0 e^{\alpha t} \quad\text{(solução geral)}$$
 
 Esse método funciona bem para essa EDO isolada, mas deixa de ser prático assim que a equação passa a ter uma entrada externa $r(t)$ ou quando vários subsistemas são interligados — a separação de variáveis não se generaliza diretamente para esses casos.
 
 **Com Laplace (método algébrico):**
 
-Aplicando a transformada de Laplace em $\dot{x}(t) = \alpha x(t)$, com $\mathcal{L}\{\dot{x}(t)\} = sX(s) - x(0)$:
+Aplicando a transformada de Laplace em $\dot{x}(t)= \alpha x(t)$ :
 
-$$sX(s) - x_0 = \alpha X(s)\Longrightarrow X(s)(s-\alpha) = x_0 \Longrightarrow X(s) = \frac{x_0}{s-\alpha}$$
+```math 
+\mathcal{L}\{\dot{x} (t)\} = \mathcal{L}\{\alpha x(t)\}
+\Rightarrow sX(s) - x(0) = \alpha X(s) 
+```
+
+```math 
+\Rightarrow sX(s) - x_0 = \alpha X(s)\Longrightarrow X(s)(s-\alpha) = x_0 \Longrightarrow X(s) = \frac{x_0}{s-\alpha}
+```
 
 A EDO virou uma equação puramente algébrica em $s$. Para voltar ao domínio do tempo, basta reconhecer a forma padrão $\mathcal{L}^{-1}\{1/(s-a)\} = e^{at}$:
 
