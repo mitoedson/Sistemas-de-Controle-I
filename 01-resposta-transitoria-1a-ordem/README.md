@@ -20,7 +20,7 @@ $$\dot{x}(t) = \alpha\ x(t), \qquad x(0) = x_0$$
 
 **Sem Laplace (separação de variáveis):**
 
-$$\frac{dx}{x} = \alpha dt \Longrightarrow \int \frac{dx}{x} = \int \alpha\ dt \Longrightarrow \ln x = \alpha t + C$$
+$$\frac{dx}{x} = \alpha dt \Longrightarrow \int \frac{dx}{x} = \int \alpha dt \Longrightarrow \ln x = \alpha t + C$$
 
 Aplicando exponencial e usando $x(0) = x_0$ para determinar a constante $C$:
 
@@ -42,7 +42,7 @@ x(t) = \mathcal{L}^{-1} \left \{\frac{x_0}{s-\alpha}\right\} = x_0 e^{\alpha t}
 
 — o mesmo resultado obtido sem Laplace, confirmando que a transformada não altera a resposta; ela apenas troca o tipo de problema (cálculo → álgebra).
 
-**Ligação com sistemas de 1ª ordem:** fazendo $\alpha = -1/T$ (sistema estável, $T>0$),
+**Ligação com sistemas de 1ª ordem:** fazendo $\alpha = -\frac{1}{T}$ (sistema estável, $T>0$),
 
 $$X(s) = \frac{x_0}{s+1/T} \quad\Longrightarrow\quad x(t) = x_0\,e^{-t/T}$$
 
@@ -52,7 +52,7 @@ Essa é a resposta natural (livre) de um sistema de 1ª ordem, com o mesmo polo 
 
 Todo sistema físico de 1ª ordem é descrito, no domínio do tempo, por uma **equação diferencial ordinária (EDO)** linear e invariante no tempo. Para um sistema genérico com entrada $r(t)$ e saída $c(t)$, essa equação tem a forma:
 
-$$T\,\dot{c}(t) + c(t) = K\,r(t)$$
+$$T \dot{c}(t) + c(t) = K r(t)$$
 
 onde $T$ é a constante de tempo e $K$ o ganho estático do sistema.
 
@@ -65,7 +65,7 @@ onde $T$ é a constante de tempo e $K$ o ganho estático do sistema.
 
 Aplicando a Transformada de Laplace na EDO (com condições iniciais nulas), as operações de derivação no tempo viram multiplicação por $s$ no domínio da frequência complexa. A equação diferencial se transforma em uma **equação puramente algébrica**:
 
-$$T\,s\,C(s) + C(s) = K\,R(s) \quad \Longrightarrow \quad C(s)\,(Ts + 1) = K\,R(s)$$
+$$TsC(s) + C(s) = KR(s) \quad \Longrightarrow \quad C(s)(Ts + 1) = KR(s)$$
 
 Isolando a razão saída/entrada, obtemos a **função de transferência**:
 
@@ -127,19 +127,6 @@ Para enriquecer seu repositório, você pode incluir scripts que utilizem os com
 *   impulse(sys): Plota a resposta ao impulso.
 
 Este conteúdo oferece uma base sólida e tecnicamente referenciada para o seu material de estudos.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

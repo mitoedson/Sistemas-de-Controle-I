@@ -6,7 +6,9 @@ Material de referência sobre a Transformada de Laplace, com foco no seu uso com
 
 A Transformada de Laplace de uma função $f(t)$, definida para $t \geq 0$, é dada por:
 
-$$F(s) = \mathcal{L}\{f(t)\} = \int_0^{\infty} f(t)\,e^{-st}\,dt$$
+```math
+F(s) = \mathcal{L}{f(t)} = \int_0^{\infty} f(t)e^{-st} dt
+```
 
 onde $s = \sigma + j\omega$ é uma variável complexa. O operador converte uma função do domínio do tempo (variável real $t$) em uma função no domínio da frequência complexa (variável $s$).
 
