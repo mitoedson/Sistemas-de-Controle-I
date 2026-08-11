@@ -26,7 +26,9 @@ $$\mathcal{L}\{\ddot f(t)\} = s^2F(s) - sf(0) - \dot f(0)$$
 
 De forma geral, para a $n$-ésima derivada:
 
-$$\mathcal{L}\left\{\frac{d^n f(t)}{dt^n}\right\} = s^nF(s) - s^{n-1}f(0) - s^{n-2}\dot f(0) - \dots - f^{(n-1)}(0)$$
+```math
+\mathcal{L}\left\{\frac{d^n f(t)}{dt^n}\right\} = s^nF(s) - s^{n-1}f(0) - s^{n-2}\dot f(0) - \dots - f^{(n-1)}(0)
+```
 
 **O ponto-chave:** cada derivada no tempo vira uma multiplicação por $s$ (mais um termo de condição inicial) no domínio de Laplace. Isso significa que uma EDO — que envolve operações de cálculo (derivadas) — se transforma em uma equação **puramente algébrica** em $s$, envolvendo apenas somas, produtos e potências de $s$. É essa troca de "cálculo" por "álgebra" que permite:
 
