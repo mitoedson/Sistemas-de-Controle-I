@@ -12,19 +12,19 @@ Análise de resposta transitória e de regime estacionário de sistemas de 1ª o
 
 Antes de generalizar, vale a pena ver a conversão EDO → Laplace no exemplo mais simples possível: a resposta livre (sem entrada externa) de um sistema de 1ª ordem, cuja solução clássica é a exponencial
 
-$$x(t) = x_0\,e^{\alpha t}$$
+$$x(t) = x_0 e^{\alpha t}$$
 
 Essa função é solução da EDO homogênea
 
-$$\dot{x}(t) = \alpha\,x(t), \qquad x(0) = x_0$$
+$$\dot{x}(t) = \alpha\ x(t), \qquad x(0) = x_0$$
 
 **Sem Laplace (separação de variáveis):**
 
-$$\frac{dx}{x} = \alpha\,dt \;\;\Longrightarrow\;\; \int \frac{dx}{x} = \int \alpha\,dt \;\;\Longrightarrow\;\; \ln x = \alpha t + C$$
+$$\frac{dx}{x} = \alpha dt \Longrightarrow \int \frac{dx}{x} = \int \alpha\ dt \Longrightarrow \ln x = \alpha t + C$$
 
 Aplicando exponencial e usando $x(0) = x_0$ para determinar a constante $C$:
 
-$$x(t) = e^{C}e^{\alpha t}, \qquad x(0) = e^{C} = x_0 \;\;\Longrightarrow\;\; x(t) = x_0\,e^{\alpha t}$$
+$$x(t) = e^{C}e^{\alpha t} \qquad x(0) = e^{C} = x_0 \Longrightarrow x(t) = x_0 e^{\alpha t}$$
 
 Esse método funciona bem para essa EDO isolada, mas deixa de ser prático assim que a equação passa a ter uma entrada externa $r(t)$ ou quando vários subsistemas são interligados — a separação de variáveis não se generaliza diretamente para esses casos.
 
