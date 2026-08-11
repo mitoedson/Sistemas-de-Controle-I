@@ -36,7 +36,9 @@ $$sX(s) - x_0 = \alpha X(s)\Longrightarrow X(s)(s-\alpha) = x_0 \Longrightarrow 
 
 A EDO virou uma equação puramente algébrica em $s$. Para voltar ao domínio do tempo, basta reconhecer a forma padrão $\mathcal{L}^{-1}\{1/(s-a)\} = e^{at}$:
 
-$$x(t) = \mathcal{L}^{-1} \left \{\frac{x_0}{s-\alpha}\right\} = x_0 e^{\alpha t}$$
+```math
+x(t) = \mathcal{L}^{-1} \left \{\frac{x_0}{s-\alpha}\right\} = x_0 e^{\alpha t}
+```
 
 — o mesmo resultado obtido sem Laplace, confirmando que a transformada não altera a resposta; ela apenas troca o tipo de problema (cálculo → álgebra).
 
